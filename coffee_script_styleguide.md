@@ -4,8 +4,8 @@
 
 * All CoffeeScript code (variable names, class names…) is written in camelcase
 * Object and function names start lowercase. The only exception are constructor functions (like class definitions) that you can call with the `new` operator, e.g. `new ShapeView()`
-
-* Globals shalt only be used with personal permission of Douglas Crockford
+* Globals shalt only be used with personal permission of Douglas Crockford <douglas@crockford.com>
+* An appliaction uses a single namespace that contains *all* application code
 * There are always two lines of white space between two methods
 
 ## Naming Conventions
