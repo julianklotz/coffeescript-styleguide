@@ -14,10 +14,11 @@
 * Collections are named like their models, but pluralized. Example: `DisplayObjects`, the file name would be `display_objects.coffee`
 
 ## DOM & Views
-* Backbone views and the html markup they render are independet from the “rest” of the DOM. This means that no elements outside a view are manipulated. Backbone offers a handy scoped `$` function for this purpose. Calling `@$('.some-selector')` will search for an element that matches the selector *only within the view*. This is important because it promotes modularity and reduces side effects.
+* Backbone views and the html markup they render are independent from the “rest” of the DOM. This means that no elements outside a view are manipulated. Backbone offers a handy scoped `$` function for this purpose. Calling `@$('.some-selector')` will search for an element that matches the selector *only within the view*. This is important because it promotes modularity and reduces side effects.
 * If you wish to communicate with other objects from within a view, consider using:
-  * The mighty `trigger` function. This is useful to notify parent objects that a certain event has occured. Example in a backbone view: `@trigger 'attachmentselected', argument(s)`. In the parent element you can bind on the view with `@childView.on 'attachmentselected', @onAttachmentSelected`. Important: Backbone events don’t bubble.
-	* If the parent element is not enough, a `mediator` may be a good approach.
+	* The mighty `trigger` function. This is useful to notify parent objects that a certain event has occured. Example in a backbone view: `@trigger 'attachmentselected', argument(s)`. In the parent element you can bind on the view with `@childView.on 'attachmentselected', @onAttachmentSelected`. Important: Backbone events don’t bubble.
+	* If the parent element is not enough, a mediator may be a good approach.
+* Event names (e.g. `onuserselected`) are lowercase
 
 
 
