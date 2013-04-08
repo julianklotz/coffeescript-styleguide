@@ -7,6 +7,7 @@
 * Globals shalt only be used with personal permission of Douglas Crockford <douglas@crockford.com>
 * An appliaction uses a single namespace that contains *all* application code
 * There are always two lines of white space between two methods
+* Each tab is expanded to two spaces
 
 ## Naming Conventions
 * View names are postfixed with `View`, e.g. `ShapeView`. The file name is lowercase singular, without `View` postfix, e.g. `shape.coffee`. Both singular and plural are possible, depending on the use case. Views that render subviews for a set of models are plural. A view that renders, for example, 10 shapes, should be named `ShapesView`, with file name `shapes.coffee`.
