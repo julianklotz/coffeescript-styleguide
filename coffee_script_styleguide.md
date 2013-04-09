@@ -10,7 +10,7 @@
 * Each tab is expanded to two spaces
 
 ## Naming Conventions
-* View names are postfixed with `View`, e.g. `ShapeView`. The file name is lowercase singular, without `View` postfix, e.g. `shape.coffee`. Both singular and plural are possible, depending on the use case. Views that render subviews for a set of models are plural. A view that renders, for example, 10 shapes, should be named `ShapesView`, with file name `shapes.coffee`.
+* View names are postfixed with `View`, e.g. `ShapeView`. The file name is lowercase singular, with `_view` postfix, e.g. `shape_view.coffee`. Both singular and plural are possible, depending on the use case. Views that render subviews for a set of models are plural. A view that renders, for example, 10 shapes, should be named `ShapesView`, with file name `shapes.coffee`.
 * Model names are singular; no postfix is required. Example: `DisplayObject`, the file name would be `display_object.coffee`
 * Collections are named like their models, but pluralized. Example: `DisplayObjects`, the file name would be `display_objects.coffee`
 
